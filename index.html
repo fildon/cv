@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lindy hop video recaps." />
+    <meta property="og:url" content="https://fildon.me/learning-lindy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Learning Lindy" />
+    <meta property="og:description" content="Lindy hop video recaps." />
+    <meta
+      property="og:image"
+      content="https://fildon.me/static/rupertemoji.png"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rupert Foggo McKay</title>
+    <style>
+      /* Global */
+      :root {
+        --s-1: 0.5em;
+        --s0: 1em;
+        --s1: 1.5em;
+        --measure: 100ch;
+        --bright: #ffffff;
+        --soft: #f3f2ef;
+        --shadow: #cccccc;
+        --subtle: #999999;
+        --hard: #191919;
+        --accent: #0a66c2;
+        --hard-accent: #07498a;
+      }
+      body {
+        line-height: 1.5;
+        background-color: var(--soft);
+        color: var(--hard);
+        font-family: system-ui, Helvetica, Arial, sans-serif;
+      }
+      hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid var(--shadow);
+        margin: 1em 0;
+        padding: 0;
+      }
+      /* Composition */
+      body {
+        margin-inline: auto;
+        max-inline-size: min(var(--measure), 90vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      body > * {
+        max-width: 100%;
+      }
+      body > * + * {
+        margin-block-start: var(--s0);
+      }
+      /* Utility */
+      .card {
+        background-color: var(--bright);
+        box-shadow: 0px 0px 0px 1px var(--shadow);
+        border-radius: var(--s-1);
+      }
+      .card > * {
+        margin: var(--s0);
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .subtle {
+        color: var(--subtle);
+      }
+      .button-link {
+        display: inline-block;
+        color: var(--bright);
+        background-color: var(--accent);
+        border: none;
+        border-radius: var(--s1);
+        margin: var(--s0);
+        padding: var(--s0);
+        cursor: pointer;
+      }
+      .button-link:hover {
+        background-color: var(--hard-accent);
+      }
+      /* Block */
+      .banner {
+        margin: 0;
+        background-color: var(--accent);
+        border-radius: var(--s-1) var(--s-1) 0 0;
+        padding: var(--s0);
+        text-align: center;
+        color: var(--bright);
+      }
+      .avatar {
+        border-radius: 100%;
+        margin-left: var(--s0);
+        /* TODO CSS vars */
+        margin-top: -4em;
+        max-width: 6em;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="card">
+      <section class="banner">
+        <h1>Curriculum Vitae</h1>
+      </section>
+      <img
+        src="./images/headshot.jpg"
+        alt="Headshot of Rupert"
+        class="avatar"
+      />
+      <h2 class="inline-block">Rupert Foggo McKay</h2>
+      <span class="subtle">(He/Him)</span>
+      <p>Staff Software Engineer at Lokalise</p>
+      <span class="subtle">Delft, South Holland, Netherlands</span>
+      <span>Contact Details</span>
+      <!-- TODO href for this -->
+      <a class="button-link" href="./images/headshot.jpg" target="_blank"
+        >Download CV (pdf)</a
+      >
+    </header>
+    <main class="card">
+      <h2>About</h2>
+      <p>Hey everybody!</p>
+      <p>
+        I'm Rupert Foggo McKay. I've worked in Software for over a decade.
+        During that time I've worked in big companies, little companies, and
+        everything in between. I've seen the good, the bad, and the ugly. I've
+        been a developer, client communicator, team leader, teacher, and mentor.
+      </p>
+      <p>
+        These days I specialize in React/TypeScript/Jest but I'm always excited
+        by new players in the JavaScript ecosystem. I'm especially passionate
+        about code quality, testing, and accessibility.
+      </p>
+    </main>
+    <article class="card">
+      <h2>Experience</h2>
+      <h3>Staff Software Engineer</h3>
+      <p>Lokalise</p>
+      <p class="subtle">Apr 2022 - Present</p>
+      <hr />
+      <h3>Senior Software Engineer</h3>
+      <p>adidas</p>
+      <p class="subtle">May 2021 - Apr 2022</p>
+      <hr />
+      <h3>Lead Developer</h3>
+      <p>DotControl</p>
+      <p class="subtle">Nov 2020 - May 2021</p>
+      <hr />
+      <h3>Senior Software Development Engineer</h3>
+      <p>Expedia</p>
+      <p class="subtle">Feb 2020 - Nov 2020</p>
+      <hr />
+      <h3>Professional Development Expert</h3>
+      <p>Softwire</p>
+      <p class="subtle">Jan 2018 - Jan 2020</p>
+      <hr />
+      <h3>Senior Software Engineer</h3>
+      <p>Softwire</p>
+      <p class="subtle">Jan 2017 - Jan 2018</p>
+      <hr />
+      <h3>Software Engineer</h3>
+      <p>Softwire</p>
+      <p class="subtle">Jan 2015 - Jan 2017</p>
+      <hr />
+      <h3>Software Engineer</h3>
+      <p>IPL</p>
+      <p class="subtle">Sep 2013 - Jan 2014</p>
+    </article>
+    <article class="card">
+      <h2>Education</h2>
+      <h3>University of Bath</h3>
+      <p>Bachelor of Science - Computer Science</p>
+      <p class="subtle">2010 - 2013</p>
+      <p>Grade: First-class honours</p>
+      <hr />
+      <h3>University of Warwick</h3>
+      <p>Mathematics and Economics</p>
+      <p class="subtle">2007 - 2009</p>
+    </article>
+  </body>
+</html>
