@@ -55,14 +55,20 @@
         padding: 0;
       }
       /* Composition */
-      header {
-        display: flex;
-        justify-content: space-between;
-        padding: var(--s-1);
+      .sticky-top {
         position: sticky;
         top: 0;
         background-color: var(--greyscale0);
         border-bottom: 1px solid var(--greyscale2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        width: min(var(--measure), 90vw);
+        display: flex;
+        justify-content: space-between;
+        padding: var(--s-1);
         align-items: center;
       }
       .links {
@@ -150,19 +156,21 @@
     </style>
   </head>
   <body>
-    <header>
-      <img src="./assets/rupertemoji.png" alt="Rupert Logo" class="logo" />
-      <div class="links">
-        <a class="emoji-link" href="https://fildon.me">
-          <span>🏠</span>
-          <span>Home</span>
-        </a>
-        <a class="emoji-link" href="https://fildon.me/blog">
-          <span>📖</span>
-          <span>Blog</span>
-        </a>
-      </div>
-    </header>
+    <div class="sticky-top">
+      <header>
+        <img src="./assets/rupertemoji.png" alt="Rupert Logo" class="logo" />
+        <div class="links">
+          <a class="emoji-link" href="https://fildon.me">
+            <span>🏠</span>
+            <span>Home</span>
+          </a>
+          <a class="emoji-link" href="https://fildon.me/blog">
+            <span>📖</span>
+            <span>Blog</span>
+          </a>
+        </div>
+      </header>
+    </div>
     <div class="column-flow">
       <article class="card">
         <section class="banner">
