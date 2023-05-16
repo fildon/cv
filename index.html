@@ -10,8 +10,8 @@
       property="og:description"
       content="Online CV for Rupert Foggo McKay"
     />
-    <meta property="og:image" content="./images/rupertemoji.png" />
-    <link rel="icon" href="./images/rupertemoji.png" />
+    <meta property="og:image" content="./assets/rupertemoji.png" />
+    <link rel="icon" href="./assets/rupertemoji.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rupert Foggo McKay</title>
@@ -148,7 +148,7 @@
   </head>
   <body>
     <header>
-      <img src="./images/rupertemoji.png" alt="Rupert Logo" class="logo" />
+      <img src="./assets/rupertemoji.png" alt="Rupert Logo" class="logo" />
       <div class="links">
         <a class="emoji-link" href="https://fildon.me">
           <span>🏠</span>
@@ -163,10 +163,11 @@
     <div class="column-flow">
       <article class="card">
         <section class="banner">
+          <!-- TODO this text gets cutoff on narrow screens -->
           <h1>Curriculum Vitae</h1>
         </section>
         <img
-          src="./images/headshot.jpg"
+          src="./assets/headshot.jpg"
           alt="Headshot of Rupert"
           class="avatar"
         />
@@ -176,8 +177,9 @@
         <span class="subtle">Delft, South Holland, Netherlands</span>
         <!-- TODO contact details -->
         <span>Contact Details</span>
-        <!-- TODO href for this -->
-        <a class="button-link" href="./images/headshot.jpg" target="_blank"
+        <!-- TODO actual CV.pdf for this -->
+        <!-- TODO also don't forget to remove the dummy file -->
+        <a class="button-link" href="./assets/dummy.pdf" target="_blank"
           >Download CV (pdf)</a
         >
       </article>
