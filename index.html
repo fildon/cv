@@ -2,186 +2,332 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Lindy hop video recaps." />
-    <meta property="og:url" content="https://fildon.me/learning-lindy" />
+    <meta name="description" content="Online CV for Rupert McKay" />
+    <meta property="og:url" content="https://rupertmckay.com/cv/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Learning Lindy" />
-    <meta property="og:description" content="Lindy hop video recaps." />
+    <meta property="og:title" content="Rupert McKay: Curriculum Vitae" />
+    <meta
+      property="og:description"
+      content="Online CV for Rupert Foggo McKay"
+    />
     <meta
       property="og:image"
-      content="https://fildon.me/static/rupertemoji.png"
+      content="https://raw.githubusercontent.com/fildon/cv/main/assets/rupertemoji.png"
     />
+    <link rel="icon" href="./assets/rupertemoji.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rupert Foggo McKay</title>
-    <style>
-      /* Global */
-      :root {
-        --s-1: 0.5em;
-        --s0: 1em;
-        --s1: 1.5em;
-        --measure: 100ch;
-        --bright: #ffffff;
-        --soft: #f3f2ef;
-        --shadow: #cccccc;
-        --subtle: #999999;
-        --hard: #191919;
-        --accent: #0a66c2;
-        --hard-accent: #07498a;
-      }
-      body {
-        line-height: 1.5;
-        background-color: var(--soft);
-        color: var(--hard);
-        font-family: system-ui, Helvetica, Arial, sans-serif;
-      }
-      hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid var(--shadow);
-        margin: 1em 0;
-        padding: 0;
-      }
-      /* Composition */
-      body {
-        margin-inline: auto;
-        max-inline-size: min(var(--measure), 90vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-      }
-      body > * {
-        max-width: 100%;
-      }
-      body > * + * {
-        margin-block-start: var(--s0);
-      }
-      /* Utility */
-      .card {
-        background-color: var(--bright);
-        box-shadow: 0px 0px 0px 1px var(--shadow);
-        border-radius: var(--s-1);
-      }
-      .card > * {
-        margin: var(--s0);
-      }
-      .inline-block {
-        display: inline-block;
-      }
-      .subtle {
-        color: var(--subtle);
-      }
-      .button-link {
-        display: inline-block;
-        color: var(--bright);
-        background-color: var(--accent);
-        border: none;
-        border-radius: var(--s1);
-        margin: var(--s0);
-        padding: var(--s0);
-        cursor: pointer;
-      }
-      .button-link:hover {
-        background-color: var(--hard-accent);
-      }
-      /* Block */
-      .banner {
-        margin: 0;
-        background-color: var(--accent);
-        border-radius: var(--s-1) var(--s-1) 0 0;
-        padding: var(--s0);
-        text-align: center;
-        color: var(--bright);
-      }
-      .avatar {
-        border-radius: 100%;
-        margin-left: var(--s0);
-        /* TODO CSS vars */
-        margin-top: -4em;
-        max-width: 6em;
-      }
-    </style>
+    <title>Rupert McKay</title>
+    <link href="./reset.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
   </head>
-  <body>
-    <header class="card">
+  <body class="vertical-spacing">
+    <article class="card">
       <section class="banner">
         <h1>Curriculum Vitae</h1>
       </section>
-      <img
-        src="./images/headshot.jpg"
-        alt="Headshot of Rupert"
-        class="avatar"
-      />
-      <h2 class="inline-block">Rupert Foggo McKay</h2>
-      <span class="subtle">(He/Him)</span>
-      <p>Staff Software Engineer at Lokalise</p>
-      <span class="subtle">Delft, South Holland, Netherlands</span>
-      <span>Contact Details</span>
-      <!-- TODO href for this -->
-      <a class="button-link" href="./images/headshot.jpg" target="_blank"
+      <div>
+        <h2 class="inline-block">Rupert McKay</h2>
+        <span class="subtle">(He/Him)</span>
+        <span class="subtle block">Delft, Netherlands</span>
+        <p>Staff Software Engineer at Lokalise</p>
+      </div>
+      <dl class="contact-grid">
+        <dt>Email:</dt>
+        <dd>
+          <a href="mailto:contact@rupertmckay.com">contact@rupertmckay.com</a>
+        </dd>
+        <dt>Website:</dt>
+        <dd>
+          <a href="https://rupertmckay.com">www.rupertmckay.com</a>
+        </dd>
+      </dl>
+      <!-- TODO actual CV.pdf for this -->
+      <!-- TODO also don't forget to remove the dummy file -->
+      <a class="button-link" href="./assets/dummy.pdf" target="_blank"
         >Download CV (pdf)</a
       >
-    </header>
+    </article>
     <main class="card">
       <h2>About</h2>
-      <p>Hey everybody!</p>
       <p>
-        I'm Rupert Foggo McKay. I've worked in Software for over a decade.
-        During that time I've worked in big companies, little companies, and
-        everything in between. I've seen the good, the bad, and the ugly. I've
-        been a developer, client communicator, team leader, teacher, and mentor.
-      </p>
-      <p>
-        These days I specialize in React/TypeScript/Jest but I'm always excited
-        by new players in the JavaScript ecosystem. I'm especially passionate
-        about code quality, testing, and accessibility.
+        I am a motivated multidisciplinary staff software engineer with over 10
+        years of professional experience. I have worked closely with
+        high-profile clients and gained both deep and broad expertise. My roles
+        have included full stack development, software architecture and team
+        leadership. I am a firm believer in collaboration across product, design
+        and development domains. I can work alone, but am most valuable as a
+        multiplier to others. I am passionate about clean code, test driven
+        development and mentoring others
       </p>
     </main>
     <article class="card">
       <h2>Experience</h2>
-      <h3>Staff Software Engineer</h3>
-      <p>Lokalise</p>
-      <p class="subtle">Apr 2022 - Present</p>
+      <div class="flex">
+        <a href="https://lokalise.com/">
+          <image
+            src="./assets/lokalise.jpg"
+            alt="Lokalise"
+            class="logo"
+          ></image>
+        </a>
+        <div class="vertical-spacing">
+          <div>
+            <h3>Staff Software Engineer</h3>
+            <p>Lokalise</p>
+            <p class="subtle">Apr 2022 - Present</p>
+          </div>
+          <i>Staff Engineer: <b>Frontend Strategy</b></i>
+          <p>
+            Laid the scaffold for a green-field project with AI at the heart.
+            Establishing a framework which can be scaled to many more
+            developers. Championed migration from styled-components to CSS
+            modules.
+          </p>
+          <p>
+            Technologies: TypeScript, React, Turborepo, Fastify, Vite,
+            React-Query, Zod, Wretch, CSS Modules, ChatGPT, GPT-4
+          </p>
+          <hr />
+          <i>Staff Engineer: <b>Extensibility Tribe</b></i>
+          <p>
+            Mentored and multiplied the productivity of the whole Extensibility
+            Tribe. The Tribe's goal was to create and maintain the tools
+            necessary to ensure third-party developers could directly integrate
+            with Lokalise's APIs. Champion for frontend performance and
+            monitoring initiative in which we improved page load times from
+            several seconds down to only a few hundred milliseconds.
+          </p>
+          <p>Technologies: TypeScript, React, styled-components, Fastify.</p>
+        </div>
+      </div>
       <hr />
-      <h3>Senior Software Engineer</h3>
-      <p>adidas</p>
-      <p class="subtle">May 2021 - Apr 2022</p>
+      <div class="flex">
+        <a href="https://adidas.com/">
+          <image src="./assets/adidas.jpg" alt="adidas" class="logo"></image>
+        </a>
+        <div class="vertical-spacing">
+          <div>
+            <h3>Senior Software Engineer</h3>
+            <p>adidas</p>
+            <p class="subtle">May 2021 - Apr 2022</p>
+          </div>
+          <i
+            >Checkout user experience and payment integration:
+            <b>.COM Checkout and Payment</b></i
+          >
+          <p>
+            Technical lead for the adidas lower funnel checkout and payment
+            experience. Inter-team champion for TypeScript, Jest and Testing
+            Library. Lead initiative for TypeScript upgrades across entire
+            adidas.com codebase. Delivered biweekly technical talks to all .COM
+            teams on broad range of topics.
+          </p>
+          <p>Technologies: React, TypeScript, Jest, Webpack, Adyen, ACI.</p>
+        </div>
+      </div>
       <hr />
-      <h3>Lead Developer</h3>
-      <p>DotControl</p>
-      <p class="subtle">Nov 2020 - May 2021</p>
+      <div class="flex">
+        <a href="https://dotcontrol.com/">
+          <image
+            src="./assets/dotcontrol.jpg"
+            alt="DotControl"
+            class="logo"
+          ></image>
+        </a>
+        <div class="vertical-spacing">
+          <div>
+            <h3>Lead Developer</h3>
+            <p>DotControl</p>
+            <p class="subtle">Nov 2020 - May 2021</p>
+          </div>
+          <i>All-encompassing marketing content platform: <b>DPG GROW</b></i>
+          <p>
+            Team lead for an ambitious MVP web platform. Managed client
+            expectations and scope. Established Agile best practices and lead
+            the development team in both frontend and backend. Enhanced
+            developer processes leading to a near doubling of team velocity.
+          </p>
+          <p>Technologies: Umbraco</p>
+          <hr />
+          <i>E-commerce platform rebuild: <b>DPG Media</b></i>
+          <p>
+            Architected and lead development on the frontend, while
+            collaborating with the backend team to ensure a performant user
+            experience, even while handling volatile user traffic spikes coming
+            from a huge customer base across the Benelux. Eliminated server
+            downtime with cloud scaling and Azure deployment slot swapping.
+          </p>
+          <p>
+            Technologies: Next.js, TypeScript, React, Jest, Storybook, Umbraco
+            Heartcore,
+          </p>
+          <hr />
+          <i>Ethical commodity sourcing platform: <b>SourceUp</b></i>
+          <p>
+            Took over team leadership shortly after MVP release. Championed
+            reduction of tech debt and refactoring to better ensure long term
+            maintainability and product quality. Dramatically reduced page load
+            times by a factor of 10.
+          </p>
+          <p>Technologies: Next.js, TypeScript, React, Jest, GraphQL.</p>
+        </div>
+      </div>
       <hr />
-      <h3>Senior Software Development Engineer</h3>
-      <p>Expedia</p>
-      <p class="subtle">Feb 2020 - Nov 2020</p>
+      <div class="flex">
+        <a href="https://www.expedia.com/">
+          <image src="./assets/expedia.jpg" alt="Expedia" class="logo"></image>
+        </a>
+        <div class="vertical-spacing">
+          <div>
+            <h3>Senior Software Development Engineer</h3>
+            <p>Expedia</p>
+            <p class="subtle">Feb 2020 - Nov 2020</p>
+          </div>
+          <i>Single page application and API: <b>Agency Tiers</b></i>
+          <p>
+            Coordinated with Product and Design to lead development of a full
+            stack application to handle the automation of a previously
+            file-intensive manual process.
+          </p>
+          <p>Technologies: TypeScript, Jest, React.</p>
+          <hr />
+          <i>Web Platform Localization: <b>Portal TAAP Compatibility</b></i>
+          <p>
+            Took complete leadership from conception to delivery of providing
+            localization support languages across a SPA web platform. Enabled
+            lazy loading locale selection without requiring full page load.
+            During this time received the 'Spirit Award' for embodying the
+            Expedia core principles:
+          </p>
+          <blockquote>
+            <q>
+              Rupert speaks his mind on difficult topics when he knows it is
+              best for the team... actions things both big & small... has an
+              attitude for saying 'yes'.
+            </q>
+          </blockquote>
+          <p>Technologies: i18next, React.</p>
+          <hr />
+          <i>API Migration: <b>Monolith to Kumo</b></i>
+          <p>
+            Refactored and streamlined the team's existing AWS lambda node API
+            templates to make use of Webpack, Babel and ES6 support. Established
+            baseline for best practices in future APIs.
+          </p>
+          <p>Technologies: AWS, Lambda, Webpack, ES6, Babel.</p>
+        </div>
+      </div>
       <hr />
-      <h3>Professional Development Expert</h3>
-      <p>Softwire</p>
-      <p class="subtle">Jan 2018 - Jan 2020</p>
+      <div class="flex">
+        <a href="https://www.softwire.com/">
+          <image
+            src="./assets/softwire.jpg"
+            alt="Softwire"
+            class="logo"
+          ></image>
+        </a>
+        <div class="vertical-spacing">
+          <div>
+            <h3>Professional Development Expert</h3>
+            <p>Softwire</p>
+            <p class="subtle">Jan 2018 - Jan 2020</p>
+          </div>
+          <i>Apprenticeship training department: <b>Softwire Academy</b></i>
+          <p>
+            Won awards for my patient, caring and empathetic approach to
+            mentoring junior developers. Prepared students for British Computing
+            Society exams in C#, JS, and Methodologies. Taught courses in C#,
+            Java, JavaScript and Python.
+          </p>
+          <hr />
+          <div>
+            <h3>Senior Software Engineer</h3>
+            <p>Softwire</p>
+            <p class="subtle">Jan 2017 - Jan 2018</p>
+          </div>
+          <i>Various projects</i>
+          <p>
+            Took on increased responsibility on a number of projects. Handled
+            direct daily client communication of timelines, feasibility and
+            planning.
+          </p>
+          <p>
+            Technologies: JavaScript, Neo4J, C#, ASP.NET MVC, Python, Durandal,
+            Cordova.
+          </p>
+          <hr />
+          <div>
+            <h3>Software Engineer</h3>
+            <p>Softwire</p>
+            <p class="subtle">Jan 2015 - Jan 2017</p>
+          </div>
+          <i>Various projects</i>
+          <p>
+            Worked with many high-profile clients including the BBC and David
+            Lloyd gyms. Established expertise in a broad range of languages and
+            technologies.
+          </p>
+          <p>Technologies: HTML, CSS, JavaScript, Angular, KnockoutJS, Java.</p>
+        </div>
+      </div>
       <hr />
-      <h3>Senior Software Engineer</h3>
-      <p>Softwire</p>
-      <p class="subtle">Jan 2017 - Jan 2018</p>
-      <hr />
-      <h3>Software Engineer</h3>
-      <p>Softwire</p>
-      <p class="subtle">Jan 2015 - Jan 2017</p>
-      <hr />
-      <h3>Software Engineer</h3>
-      <p>IPL</p>
-      <p class="subtle">Sep 2013 - Jan 2014</p>
+      <div class="flex">
+        <image src="./assets/ipl.jpg" alt="IPL" class="logo"></image>
+        <div class="vertical-spacing">
+          <div>
+            <h3>Software Engineer</h3>
+            <p>IPL</p>
+            <p class="subtle">Sep 2013 - Jan 2014</p>
+          </div>
+          <i>Financial market data analysis web application: <b>ORX</b></i>
+          <p>Technologies: C#, SharePoint.</p>
+        </div>
+      </div>
     </article>
     <article class="card">
       <h2>Education</h2>
-      <h3>University of Bath</h3>
-      <p>Bachelor of Science - Computer Science</p>
-      <p class="subtle">2010 - 2013</p>
-      <p>Grade: First-class honours</p>
+      <div class="flex">
+        <a href="https://www.bath.ac.uk/">
+          <image
+            src="./assets/bath.jpg"
+            alt="University of Bath"
+            class="logo"
+          ></image>
+        </a>
+        <div>
+          <div>
+            <h3>University of Bath</h3>
+            <p>Bachelor of Science with Honours - Computer Science</p>
+            <p class="subtle">2010 - 2013</p>
+          </div>
+          <p>Grade: First-class honours</p>
+          <ul>
+            <li>
+              Departmental Prize for Contribution to the Development and Life of
+              the Department
+            </li>
+            <li>Outstanding Contribution Award</li>
+            <li>Achievement Award</li>
+          </ul>
+        </div>
+      </div>
       <hr />
-      <h3>University of Warwick</h3>
-      <p>Mathematics and Economics</p>
-      <p class="subtle">2007 - 2009</p>
+      <div class="flex">
+        <a href="https://warwick.ac.uk/">
+          <image
+            src="./assets/warwick.jpg"
+            alt="University of Warwick"
+            class="logo"
+          ></image>
+        </a>
+        <div>
+          <h3>University of Warwick</h3>
+          <p>Mathematics and Economics</p>
+          <p class="subtle">2007 - 2009</p>
+        </div>
+      </div>
     </article>
+    <footer class="subtle">Design inspired by LinkedIn</footer>
   </body>
 </html>

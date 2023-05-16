@@ -1,0 +1,168 @@
+/* Global */
+:root {
+  /* Major third to perfect forth fluid type scale */
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.25,1240,18,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --size-step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --size-step-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+  --size-step-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+  --size-step-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+  --size-step-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+  --measure: 100ch;
+
+  /* Palette */
+  --greyscale0: #ffffff;
+  --greyscale1: #f3f2ef;
+  --greyscale2: #cccccc;
+  --greyscale3: #999999;
+  --greyscale4: #191919;
+  --accent: #0a66c2;
+  --accent-dark: #07498a;
+}
+
+/* Global */
+body {
+  background-color: var(--greyscale1);
+  color: var(--greyscale4);
+  font-family: Georgia, serif;
+  font-size: var(--size-step-0);
+  line-height: 1.7;
+  margin-top: var(--size-step-0);
+  margin-bottom: var(--size-step-0);
+  margin-inline: auto;
+  max-inline-size: min(var(--measure), 90vw);
+}
+
+ul,
+ol {
+  padding-inline-start: var(--size-step-0);
+}
+
+h1,
+h2,
+h3 {
+  font-family: sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--size-step-4);
+}
+
+h2 {
+  font-size: var(--size-step-3);
+}
+
+h3 {
+  font-size: var(--size-step-2);
+}
+
+blockquote {
+  padding-inline-start: var(--size-step-0);
+  border-inline-start: 0.3em solid;
+  font-style: italic;
+  font-size: var(--size-step-1);
+}
+
+/* Composition */
+.flex {
+  display: flex;
+  & > * + * {
+    margin-inline-start: var(--size-step-1);
+  }
+}
+
+.vertical-spacing {
+  display: flex;
+  flex-direction: column;
+  & > * + * {
+    margin-block-start: var(--flow-space, 1em);
+  }
+}
+
+:is(h1, h2, h3, blockquote) {
+  --flow-space: 1.5em;
+}
+
+:is(h1, h2, h3) + * {
+  --flow-space: 0.5em;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: var(--size-step-0);
+}
+
+/* Utility */
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.subtle {
+  color: var(--greyscale3);
+}
+
+.button-link {
+  display: inline-block;
+  color: var(--greyscale0);
+  background-color: var(--accent);
+  border-radius: var(--size-step-1);
+  padding: var(--size-step-0);
+  transition: background 250ms ease-in-out;
+  font-weight: bold;
+  &:hover {
+    background-color: var(--accent-dark);
+  }
+}
+
+/* Block */
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--size-step-1);
+  margin-bottom: var(--size-step-1);
+}
+
+.card {
+  background-color: var(--greyscale0);
+  box-shadow: 0px 0px 0px 1px var(--greyscale2);
+  border-radius: var(--size-step-0);
+  --card-padding: var(--size-step-1);
+  padding: var(--card-padding);
+  & .banner {
+    /* Negate the card padding to put the banner flush against the borders */
+    margin-block-start: calc(-1 * var(--card-padding));
+    margin-inline-start: calc(-1 * var(--card-padding));
+    margin-inline-end: calc(-1 * var(--card-padding));
+
+    background-color: var(--accent);
+    border-radius: var(--size-step-0) var(--size-step-0) 0 0;
+    padding: var(--size-step-0);
+    text-align: center;
+    color: var(--greyscale0);
+  }
+  & > * {
+    margin-block-start: var(--size-step-1);
+  }
+}
+
+.logo {
+  height: var(--size-step-4);
+  width: var(--size-step-4);
+  max-width: var(--size-step-4);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--greyscale2);
+  margin: 1em 0;
+  padding: 0;
+}

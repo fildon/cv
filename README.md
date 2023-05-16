@@ -1,3 +1,3 @@
 # CV
 
-My online CV. Hosted at [fildon.me/cv](https://fildon.me/cv).
+My online CV. Hosted at [rupertmckay.com/cv](https://rupertmckay.com/cv).
