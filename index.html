@@ -20,7 +20,8 @@
     <title>Rupert Foggo McKay</title>
     <style>
       /* Global */
-      :root {
+      :root,
+      ::backdrop {
         /* Spacing */
         --ratio: 1.5;
         --s0: 1rem;
@@ -28,6 +29,8 @@
         --s1: calc(var(--s0) * var(--ratio));
         --s2: calc(var(--s1) * var(--ratio));
         --s3: calc(var(--s2) * var(--ratio));
+        --s4: calc(var(--s3) * var(--ratio));
+        --s5: calc(var(--s4) * var(--ratio));
         --measure: 100ch;
 
         /* Palette */
@@ -36,15 +39,19 @@
         --greyscale2: #cccccc;
         --greyscale3: #999999;
         --greyscale4: #191919;
+        --mask: rgba(0, 0, 0, 0.75);
         --accent: #0a66c2;
-        --greyscale4-accent: #07498a;
+        --accent-dark: #07498a;
+
+        /* Typography */
+        --font: system-ui, Helvetica, Arial, sans-serif;
       }
       body {
         margin: 0;
         line-height: 1.5;
         background-color: var(--greyscale1);
         color: var(--greyscale4);
-        font-family: system-ui, Helvetica, Arial, sans-serif;
+        font-family: var(--font);
       }
       hr {
         display: block;
@@ -132,9 +139,41 @@
         margin: var(--s0);
         padding: var(--s0);
         cursor: pointer;
+        transition: background 250ms ease-in-out;
+        font-weight: bold;
       }
       .button-link:hover {
-        background-color: var(--greyscale4-accent);
+        background-color: var(--accent-dark);
+      }
+      .link-button {
+        display: inline-block;
+        border: none;
+        text-decoration: none;
+        background: none;
+        color: var(--accent);
+        font-family: var(--font);
+        font-size: 1rem;
+        line-height: 1;
+        cursor: pointer;
+        text-align: center;
+      }
+      .link-button:hover,
+      .link-button:focus {
+        text-decoration: underline;
+      }
+      dialog {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: var(--s-1);
+        border: none;
+      }
+      dialog > h2 {
+        border-bottom: 1px solid var(--greyscale3);
+      }
+      dialog::backdrop {
+        /* background-color: var(--greyscale3); */
+        /* background: rgba(255, 0, 0, 0.25); */
+        background: var(--mask);
       }
       /* Block */
       .banner {
@@ -154,11 +193,23 @@
         border-radius: 100%;
         border: solid var(--greyscale0);
         margin-left: var(--s0);
-        /* TODO CSS vars */
-        margin-top: -4em;
-        max-width: 6em;
+        margin-top: calc(-1 * var(--s3));
+        max-width: var(--s5);
       }
     </style>
+    <script>
+      onload = () => {
+        const contactDetailsButton = document.getElementById(
+          "contact-details-button"
+        );
+        const contactDetailsModal = document.getElementById(
+          "contact-details-modal"
+        );
+        contactDetailsButton.addEventListener("click", () => {
+          contactDetailsModal.showModal();
+        });
+      };
+    </script>
   </head>
   <body>
     <div class="sticky-top">
@@ -190,8 +241,9 @@
         <span class="subtle">(He/Him)</span>
         <p>Staff Software Engineer at Lokalise</p>
         <span class="subtle">Delft, South Holland, Netherlands</span>
-        <!-- TODO contact details -->
-        <span>Contact Details</span>
+        <button class="link-button" id="contact-details-button">
+          Contact Details
+        </button>
         <!-- TODO actual CV.pdf for this -->
         <!-- TODO also don't forget to remove the dummy file -->
         <a class="button-link" href="./assets/dummy.pdf" target="_blank"
@@ -262,5 +314,12 @@
       </article>
       <footer class="subtle">Design inspired by LinkedIn</footer>
     </div>
+    <dialog id="contact-details-modal">
+      <h2>Rupert Foggo McKay</h2>
+      <h3>Email</h3>
+      <a href="mailto:maxfmckay@gmail.com">maxfmckay@gmail.com</a>
+      <h3>Birthday</h3>
+      <span>September 17</span>
+    </dialog>
   </body>
 </html>
