@@ -12,7 +12,7 @@
     />
     <meta property="og:image" content="./assets/rupert.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#0a66c2" />
+    <meta name="theme-color" content="#2b6777" />
     <link rel="icon" href="./assets/rupert.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,33 +20,28 @@
     <link href="./reset.css" rel="stylesheet" />
     <link href="./styles.css" rel="stylesheet" />
   </head>
-  <body class="vertical-spacing">
-    <header class="card">
-      <section class="banner">
-        <h1>Curriculum Vitae</h1>
-      </section>
-      <div>
-        <h2 class="inline-block">Rupert McKay</h2>
-        <span class="subtle">(He/Him)</span>
-        <span class="subtle block">Delft, Netherlands</span>
-        <p>Principal Software Engineer at Odido</p>
+  <body>
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>Rupert McKay</h1>
+          <p class="subtitle">Principal Software Engineer at Odido</p>
+        </div>
+        <a class="download-link" href="./assets/rupertmckay.pdf" target="_blank"
+          >Download PDF</a
+        >
       </div>
-      <dl class="contact-grid">
-        <dt>Email:</dt>
-        <dd>
-          <a href="mailto:rupert@rupertmckay.com">rupert@rupertmckay.com</a>
-        </dd>
-        <dt>Website:</dt>
-        <dd>
-          <a href="https://rupertmckay.com">www.rupertmckay.com</a>
-        </dd>
-      </dl>
-      <a class="button-link" href="./assets/rupertmckay.pdf" target="_blank"
-        >Download CV (pdf)</a
-      >
+      <p class="contact">
+        Delft, Netherlands
+        <span class="separator" aria-hidden="true"></span>
+        <a href="mailto:rupert@rupertmckay.com">rupert@rupertmckay.com</a>
+        <span class="separator" aria-hidden="true"></span>
+        <a href="https://rupertmckay.com">rupertmckay.com</a>
+      </p>
     </header>
-    <main class="vertical-spacing">
-      <article class="card">
+
+    <main>
+      <section>
         <h2>About</h2>
         <p>
           I am a motivated multidisciplinary software engineer with over 12
@@ -58,19 +53,24 @@
           as a multiplier to others. I am passionate about clean code, test
           driven development and mentoring others.
         </p>
-      </article>
-      <article class="card">
+      </section>
+
+      <section>
         <h2>Experience</h2>
-        <div class="flex">
-          <a href="https://www.odido.nl/">
-            <img src="./assets/odido.jpg" alt="Odido" class="logo" />
-          </a>
-          <div class="vertical-spacing">
+
+        <div class="entry">
+          <div class="entry-header">
+            <a href="https://www.odido.nl/">
+              <img src="./assets/odido.jpg" alt="Odido" class="logo" />
+            </a>
             <div>
               <h3>Principal Software Engineer</h3>
-              <p>Odido</p>
-              <p class="subtle">February 2024 - Present</p>
+              <p class="meta">
+                Odido <span class="separator"></span> February 2024 - Present
+              </p>
             </div>
+          </div>
+          <div class="entry-body">
             <em>Principal Software Engineer: <b>React Portals</b></em>
             <p>
               Leading the development of all new users portals across B2C, B2B
@@ -78,20 +78,24 @@
               of the portals, as well as setting standards for hiring, coding,
               testing and quality.
             </p>
-            <p>Technologies: TypeScript, React, Next.js, NestJS.</p>
+            <p class="tech">TypeScript, React, Next.js, NestJS.</p>
           </div>
         </div>
-        <hr />
-        <div class="flex">
-          <a href="https://lokalise.com/">
-            <img src="./assets/lokalise.jpg" alt="Lokalise" class="logo" />
-          </a>
-          <div class="vertical-spacing">
+
+        <div class="entry">
+          <div class="entry-header">
+            <a href="https://lokalise.com/">
+              <img src="./assets/lokalise.jpg" alt="Lokalise" class="logo" />
+            </a>
             <div>
               <h3>Staff Software Engineer</h3>
-              <p>Lokalise</p>
-              <p class="subtle">Apr 2022 - February 2024</p>
+              <p class="meta">
+                Lokalise <span class="separator"></span> Apr 2022 - February
+                2024
+              </p>
             </div>
+          </div>
+          <div class="entry-body">
             <em>Staff Engineer: <b>Frontend Strategy</b></em>
             <p>
               Laid the scaffold for a green-field project with AI at the heart.
@@ -99,9 +103,9 @@
               developers. Championed migration from styled-components to CSS
               modules.
             </p>
-            <p>
-              Technologies: TypeScript, React, Turborepo, Fastify, Vite,
-              React-Query, Zod, Wretch, CSS Modules, ChatGPT, GPT-4
+            <p class="tech">
+              TypeScript, React, Turborepo, Fastify, Vite, React-Query, Zod,
+              Wretch, CSS Modules, ChatGPT, GPT-4
             </p>
             <hr />
             <em>Staff Engineer: <b>Extensibility Tribe</b></em>
@@ -120,20 +124,23 @@
                 were the one person that came to my mind.
               </q>
             </blockquote>
-            <p>Technologies: TypeScript, React, styled-components, Fastify.</p>
+            <p class="tech">TypeScript, React, styled-components, Fastify.</p>
           </div>
         </div>
-        <hr />
-        <div class="flex">
-          <a href="https://adidas.com/">
-            <img src="./assets/adidas.jpg" alt="adidas" class="logo" />
-          </a>
-          <div class="vertical-spacing">
+
+        <div class="entry">
+          <div class="entry-header">
+            <a href="https://adidas.com/">
+              <img src="./assets/adidas.jpg" alt="adidas" class="logo" />
+            </a>
             <div>
               <h3>Senior Software Engineer</h3>
-              <p>adidas</p>
-              <p class="subtle">May 2021 - Apr 2022</p>
+              <p class="meta">
+                adidas <span class="separator"></span> May 2021 - Apr 2022
+              </p>
             </div>
+          </div>
+          <div class="entry-body">
             <em
               >Checkout user experience and payment integration:
               <b>.COM Checkout and Payment</b></em
@@ -151,20 +158,27 @@
                 model for me
               </q>
             </blockquote>
-            <p>Technologies: React, TypeScript, Jest, Webpack, Adyen, ACI.</p>
+            <p class="tech">React, TypeScript, Jest, Webpack, Adyen, ACI.</p>
           </div>
         </div>
-        <hr />
-        <div class="flex">
-          <a href="https://dotcontrol.com/">
-            <img src="./assets/dotcontrol.jpg" alt="DotControl" class="logo" />
-          </a>
-          <div class="vertical-spacing">
+
+        <div class="entry">
+          <div class="entry-header">
+            <a href="https://dotcontrol.com/">
+              <img
+                src="./assets/dotcontrol.jpg"
+                alt="DotControl"
+                class="logo"
+              />
+            </a>
             <div>
               <h3>Lead Developer</h3>
-              <p>DotControl</p>
-              <p class="subtle">Nov 2020 - May 2021</p>
+              <p class="meta">
+                DotControl <span class="separator"></span> Nov 2020 - May 2021
+              </p>
             </div>
+          </div>
+          <div class="entry-body">
             <em
               >All-encompassing marketing content platform: <b>DPG GROW</b></em
             >
@@ -173,7 +187,7 @@
               expectations and scope. Established Agile best practices, leading
               to a near doubling of team velocity.
             </p>
-            <p>Technologies: Umbraco</p>
+            <p class="tech">Umbraco</p>
             <hr />
             <em>E-commerce platform rebuild: <b>DPG Media</b></em>
             <p>
@@ -182,9 +196,8 @@
               Eliminated server downtime with cloud scaling and Azure deployment
               slot swapping.
             </p>
-            <p>
-              Technologies: Next.js, TypeScript, React, Jest, Storybook, Umbraco
-              Heartcore,
+            <p class="tech">
+              Next.js, TypeScript, React, Jest, Storybook, Umbraco Heartcore
             </p>
             <hr />
             <em>Ethical commodity sourcing platform: <b>SourceUp</b></em>
@@ -193,27 +206,30 @@
               reduction of tech debt and refactoring. Reduced page load times by
               a factor of 10.
             </p>
-            <p>Technologies: Next.js, TypeScript, React, Jest, GraphQL.</p>
+            <p class="tech">Next.js, TypeScript, React, Jest, GraphQL.</p>
           </div>
         </div>
-        <hr />
-        <div class="flex">
-          <a href="https://www.expedia.com/">
-            <img src="./assets/expedia.jpg" alt="Expedia" class="logo" />
-          </a>
-          <div class="vertical-spacing">
+
+        <div class="entry">
+          <div class="entry-header">
+            <a href="https://www.expedia.com/">
+              <img src="./assets/expedia.jpg" alt="Expedia" class="logo" />
+            </a>
             <div>
               <h3>Senior Software Development Engineer</h3>
-              <p>Expedia</p>
-              <p class="subtle">Feb 2020 - Nov 2020</p>
+              <p class="meta">
+                Expedia <span class="separator"></span> Feb 2020 - Nov 2020
+              </p>
             </div>
+          </div>
+          <div class="entry-body">
             <em>Single page application and API: <b>Agency Tiers</b></em>
             <p>
               Coordinated with Product and Design to lead development of a full
               stack application automating a previously file-intensive manual
               process.
             </p>
-            <p>Technologies: TypeScript, Jest, React.</p>
+            <p class="tech">TypeScript, Jest, React.</p>
             <hr />
             <em>Web Platform Localization: <b>Portal TAAP Compatibility</b></em>
             <p>
@@ -222,27 +238,30 @@
               page reload. Received the 'Spirit Award' for embodying Expedia
               core principles.
             </p>
-            <p>Technologies: i18next, React.</p>
+            <p class="tech">i18next, React.</p>
             <hr />
             <em>API Migration: <b>Monolith to Kumo</b></em>
             <p>
               Refactored AWS Lambda Node API templates to use Webpack, Babel and
               ES6. Established baseline for best practices in future APIs.
             </p>
-            <p>Technologies: AWS, Lambda, Webpack, ES6, Babel.</p>
+            <p class="tech">AWS, Lambda, Webpack, ES6, Babel.</p>
           </div>
         </div>
-        <hr />
-        <div class="flex">
-          <a href="https://www.softwire.com/">
-            <img src="./assets/softwire.jpg" alt="Softwire" class="logo" />
-          </a>
-          <div class="vertical-spacing">
+
+        <div class="entry">
+          <div class="entry-header">
+            <a href="https://www.softwire.com/">
+              <img src="./assets/softwire.jpg" alt="Softwire" class="logo" />
+            </a>
             <div>
               <h3>Software Engineer → Professional Development Expert</h3>
-              <p>Softwire</p>
-              <p class="subtle">Jan 2015 - Jan 2020</p>
+              <p class="meta">
+                Softwire <span class="separator"></span> Jan 2015 - Jan 2020
+              </p>
             </div>
+          </div>
+          <div class="entry-body">
             <p>
               Progressed from Software Engineer to Senior to Professional
               Development Expert over five years. Worked with high-profile
@@ -251,45 +270,51 @@
               teaching courses in C#, Java, JavaScript and Python. Won awards
               for patient, caring and empathetic mentoring.
             </p>
-            <p>
-              Technologies: JavaScript, TypeScript, React, Angular, C#, ASP.NET
-              MVC, Java, Python, Neo4J, Cordova.
+            <p class="tech">
+              JavaScript, TypeScript, React, Angular, C#, ASP.NET MVC, Java,
+              Python, Neo4J, Cordova.
             </p>
           </div>
         </div>
-        <hr />
-        <div class="flex">
-          <img src="./assets/ipl.jpg" alt="IPL" class="logo" />
-          <div class="vertical-spacing">
+
+        <div class="entry">
+          <div class="entry-header">
+            <img src="./assets/ipl.jpg" alt="IPL" class="logo" />
             <div>
               <h3>Software Engineer</h3>
-              <p>IPL</p>
-              <p class="subtle">Sep 2013 - Jan 2014</p>
+              <p class="meta">
+                IPL <span class="separator"></span> Sep 2013 - Jan 2014
+              </p>
             </div>
-            <p>
-              Financial market data analysis web application (ORX).
-              Technologies: C#, SharePoint.
-            </p>
+          </div>
+          <div class="entry-body">
+            <p>Financial market data analysis web application (ORX).</p>
+            <p class="tech">C#, SharePoint.</p>
           </div>
         </div>
-      </article>
-      <article class="card">
+      </section>
+
+      <section>
         <h2>Education</h2>
-        <div class="flex">
-          <a href="https://www.bath.ac.uk/">
-            <img
-              src="./assets/bath.jpg"
-              alt="University of Bath"
-              class="logo"
-            />
-          </a>
-          <div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <a href="https://www.bath.ac.uk/">
+              <img
+                src="./assets/bath.jpg"
+                alt="University of Bath"
+                class="logo"
+              />
+            </a>
             <div>
               <h3>University of Bath</h3>
-              <p>Bachelor of Science with Honours - Computer Science</p>
-              <p class="subtle">2010 - 2013</p>
+              <p class="meta">
+                BSc Computer Science (First-class honours)
+                <span class="separator"></span> 2010 - 2013
+              </p>
             </div>
-            <p>Grade: First-class honours</p>
+          </div>
+          <div class="entry-body">
             <ul>
               <li>
                 Departmental Prize for Contribution to the Development and Life
@@ -300,23 +325,28 @@
             </ul>
           </div>
         </div>
-        <hr />
-        <div class="flex">
-          <a href="https://warwick.ac.uk/">
-            <img
-              src="./assets/warwick.jpg"
-              alt="University of Warwick"
-              class="logo"
-            />
-          </a>
-          <div>
-            <h3>University of Warwick</h3>
-            <p>Mathematics and Economics</p>
-            <p class="subtle">2007 - 2009</p>
+
+        <div class="entry">
+          <div class="entry-header">
+            <a href="https://warwick.ac.uk/">
+              <img
+                src="./assets/warwick.jpg"
+                alt="University of Warwick"
+                class="logo"
+              />
+            </a>
+            <div>
+              <h3>University of Warwick</h3>
+              <p class="meta">
+                Mathematics and Economics <span class="separator"></span> 2007 -
+                2009
+              </p>
+            </div>
           </div>
         </div>
-      </article>
+      </section>
     </main>
-    <footer class="subtle">Design inspired by LinkedIn</footer>
+
+    <footer>Rupert Foggo McKay</footer>
   </body>
 </html>
