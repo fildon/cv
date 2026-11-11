@@ -4,5 +4,6 @@
   },
   "devDependencies": {
     "puppeteer": "^24.39.1"
-  }
+  },
+  "packageManager": "pnpm@10.4.1"
 }
